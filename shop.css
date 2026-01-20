@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.product-card:hover {
+    transform: scale(1.03);
+}
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.price {
+    color: chocolate;
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+.stock.in-stock { color: green; }
+.stock.out-stock { color: red; }
+.qty-controls {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.qty-btn {
+    background: chocolate;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.qty {
+    width: 50px;
+    text-align: center;
+}
+.add-to-cart, .quick-view {
+    margin: 5px;
+    padding: 8px 12px;
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add-to-cart:hover, .quick-view:hover {
+    background: #cc5200;
+}
+
+/* Modal */
+.modal { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);}
+.modal-content { background:#fff; margin:15% auto; padding:20px; width:50%; border-radius:8px;}
+.close { float:right; font-size:24px; cursor:pointer; }

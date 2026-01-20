@@ -1,0 +1,63 @@
+html, body {
+    height: 100%; /* Make html and body take full height */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1; /* Push footer down if content is short */
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    gap: 10px; /* Space between lines */
+}
+
+.footer-container p {
+    margin: 5px 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; /* Wrap links on smaller screens */
+}
+
+.footer-links a {
+    color: #ffcc80;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover,
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: #ffcc80;
+}
+
+footer {
+    background-color: chocolate;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto; /* pushes footer to bottom */
+    /* ❌ remove position: fixed; */
+}

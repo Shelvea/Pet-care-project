@@ -1,0 +1,12 @@
+/* ==============================
+   Mobile Devices (max-width: 480px)
+   ============================== */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 15px;
+    background-image: url('https://img.freepik.com/free-vector/cat-lover-pattern-background-design_53876-100662.jpg'); /* Mobile-specific bg */
+    background-size: cover;
+    background-position: top;
+  }
+
+}

@@ -1,0 +1,32 @@
+/* 🌐 Default = Desktop & Tablet */
+.AdminNavbar {
+            position: fixed; /* 🧲 Sticks it to the top */
+            top: 0; /* Align to top edge */
+            left: 0;
+            right: 0;
+            background-color: chocolate;
+            display: flex;
+            align-items: center;
+            width: 100%; /* 🟢 Make it span the full width */
+            z-index: 1000; /* Make sure it stays above other content */
+        }
+.AdminNavbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+            flex:1;/* 🔥 Make all items take equal space */
+        }
+.AdminNavbar a:hover {
+            background-color: #ffcc80;
+            color: chocolate;
+        }
+.AdminNavbar .right {
+            display: flex;
+        }
+
+body {
+            padding-top: 60px; /* Adjust based on navbar height */
+        }
